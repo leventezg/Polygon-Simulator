@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="canva">
+
+    </div>
+    </canvas>
+    <script src="polygon.js"></script>
+    <script>    
+        const canva = document.querySelector('.canva');
+
+        const screenX = canva.clientWidth;
+        const screenY = canva.clientHeight;
+        
+        const polygonmesh = createPolygonMesh(2220, 6, 1920, 720);
+        canva.appendChild(polygonmesh);
+
+
+    </script>
+</body>
+</html>
